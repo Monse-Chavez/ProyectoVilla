@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículum – Monse </title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #F3EAF5; /* un violeta muy claro */
+            color: #4A235A; /* morado oscuro para textos */
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            width: 800px;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .side {
+            background: #8E44AD; /* morado medio */
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .side .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        .side h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .side p.title {
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+        .side .datos-personales, .side .contacto, .side .idiomas {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .side .datos-personales p,
+        .side .contacto p,
+        .side .idiomas p {
+            font-size: 0.95em;
+            margin: 5px 0;
+        }
+        .main {
+            padding: 40px;
+        }
+        .main section {
+            margin-bottom: 30px;
+        }
+        .main h2 {
+            font-size: 1.6em;
+            color: #6C3483; /* violeta más suave */
+            margin-bottom: 15px;
+            border-bottom: 3px solid #D2B4DE; /* línea de acento */
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .main p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        .main ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .main ul li {
+            margin-bottom: 8px;
+        }
+        /* Para que los textos importantes resalten */
+        strong {
+            color: #4A235A;
+        }
+        /* Responsividad pequeña */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .side, .main {
+                padding: 20px;
+            }
+            .side .photo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side">
+            <!-- Reemplaza src con la ruta de la foto -->
+            <img src="monse.jpg" alt="Foto de Monse" class="photo">
+
+            <h1>Monserrat Chavez Jimenez</h1>
+            <p class="title">ITI</p>
+
+            <div class="datos-personales">
+                <p><strong>Fecha de nacimiento:</strong> 13/07/2005</p>
+                <p><strong>Edad:</strong> 20 años</p>
+                <p><strong>Nacionalidad:</strong> Mexicana</p>
+            </div>
+
+            <div class="contacto">
+                <p><strong>Teléfono:</strong> 712-138-0490</p>
+                <p><strong>Correo:</strong> chavezjimenezmonserrar@gmail.com</p>
+                <p><strong>Instagram:</strong> @monse_chavez013</p>
+                <p><strong>Dirección:</strong> Bombatevi Ejido, CP: 50487</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <section class="sobre-mi">
+                <h2>Sobre mí</h2>
+                <p>Estudiante de la carrera Ingenieria en Tecnologias de la Informacion e Innovacion Digital, comprometida a trabajar en equipo y aprender muchas cosas, asi mismo estudiante de desarrollo de software multiplataforma. </p>
+            </section>
+
+            <section class="habilidades">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Conocimiento de la tecnologia</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Creativa</li>
+                </ul>
+            </section>
+
+            <section class="formacion">
+                <h2>Formación Académica</h2>
+                <p><strong>Universidad Politecnica de Atlacomulco</strong></p>
+                <p>Tecnico de Software Multiplataforma</p>
+            </section>
+
+            <section class="experiencia">
+                <h2>Experiencia</h2>
+                <ul>
+                    <li>Diferentes proyectos realizados en la Universidad Politecnica de Atlacomulco como base de datos, proyecto integrador asi como el uso de Java.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+
+
